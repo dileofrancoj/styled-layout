@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Row, Col, Container } from "./Components/Layout/Basic";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Row mt={3}>
+        <Col size={12}>
+          <p>Long column</p>
+        </Col>
+      </Row>
+      <Row m={4} justify="center">
+        <Col size={4}>
+          <p>Other column</p>
+        </Col>
+        <Col size={4}>
+          <p>Other column</p>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
